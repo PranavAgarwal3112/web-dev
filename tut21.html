@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alingment</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;
+            background-color: rgb(230, 202, 166);
+        }
+
+        body {
+            font-family: cursive;
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(231, 147, 147);
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #stationery {
+            /* float: left; */
+            clear: both;
+            width: 96.5%;
+        }
+
+        p,
+        h3 {
+            /* text-align: right;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin:23px auto;
+            width: 322px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex veniam,
+                suscipit maiores necessitatibus recusandae id, libero distinctio obcaecati ad aspernatur, blanditiis
+                adipisci sequi mollitia molestias at explicabo sit doloremque quasi!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex veniam,
+                suscipit maiores necessitatibus recusandae id, libero distinctio obcaecati ad aspernatur, blanditiis
+                adipisci sequi mollitia molestias at explicabo sit doloremque quasi!</p>
+        </div>
+        <div id="stationery" class="item">
+            <h3>stationery</h3>
+            <p id="stationerypara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex veniam,
+                suscipit maiores necessitatibus recusandae id, libero distinctio obcaecati ad aspernatur, blanditiis
+                adipisci sequi mollitia molestias at explicabo sit doloremque quasi!</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex veniam,
+                suscipit maiores necessitatibus recusandae id, libero distinctio obcaecati ad aspernatur, blanditiis
+                adipisci sequi mollitia molestias at explicabo sit doloremque quasi!</p>
+        </div>
+</body>
+
+</html>
