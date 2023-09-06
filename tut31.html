@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ADVANCE SELECTORS</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* applied if p is inside li which is inside div  */
+        /* div li p{
+            color: yellow;
+            font-weight: bold;
+            background-color: gray;
+        } */
+
+        /* applied if p is right inside div  */
+        /* div > p{
+            color: yellow;
+            font-weight: bold;
+            background-color: gray;
+        } */
+       
+       /* applied if p is next to div or sibling of div  */
+        /* div + p{
+            color: yellow;
+            font-weight: bold;
+            background-color: tomato;
+        } */
+    </style>
+ </head>
+ <body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <ul>
+            <li class="item"><p>this is a paragraph in li</p></li>
+            <li><p>this is another paragraph in li</p></li>
+           <p> this is a paragraph inside ul </p>
+        </ul>
+        <div class="row">
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+ </body>
+ </html>
