@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and keyframes</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+            position: relative;
+        }
+
+        .box {
+            background-color: green;
+            height: 250px;
+            width: 250px;
+            position: relative;
+            /* animation-name: anim1; */
+            /* animation-name: anim2; */
+            /* animation-iteration-count: 1; */
+            /* animation-duration: 1s; */
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: ease-out; */
+            /* animation-delay: 1s; */
+            
+            /* shorthand for animation  */
+            /* animation: name duration timing-function delay iteration-count fill-mode; */
+            animation: anim2 3s ease-out 1s 1 backwards;
+        }
+
+        @keyframes anim2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                top: 0px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+        @keyframes anim1 {
+            from {
+                width: 250px;
+            }
+
+            to {
+                width: 1000px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+
+</html>
